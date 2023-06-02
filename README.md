@@ -220,6 +220,194 @@
     <td>Display the contents of a file with a dollar sign ($) at the end of each line</td>
   </tr>
 </table>
+<h1>grep Command</h1>
+
+<table>
+  <tr>
+    <th>Command</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>grep 'pattern' [file]</td>
+    <td>Search for lines containing the specified pattern in the given file</td>
+  </tr>
+  <tr>
+    <td>grep -i 'pattern' [file]</td>
+    <td>Search for lines containing the specified pattern in a case-insensitive manner</td>
+  </tr>
+  <tr>
+    <td>grep -r 'pattern' [directory]</td>
+    <td>Search for lines containing the specified pattern recursively in the given directory</td>
+  </tr>
+  <tr>
+    <td>grep -n 'pattern' [file]</td>
+    <td>Search for lines containing the specified pattern and display line numbers</td>
+  </tr>
+  <tr>
+    <td>grep -v 'pattern' [file]</td>
+    <td>Search for lines not containing the specified pattern in the given file</td>
+  </tr>
+  <tr>
+    <td>grep -E 'pattern' [file]</td>
+    <td>Search for lines containing the specified pattern using extended regular expressions</td>
+  </tr>
+  <tr>
+    <td>grep -c 'pattern' [file]</td>
+    <td>Count the number of lines containing the specified pattern in the given file</td>
+  </tr>
+</table>
+<h1>chmod Command</h1>
+
+<table>
+  <tr>
+    <th>Command</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>chmod +x file</td>
+    <td>Add execute permission to the specified file</td>
+  </tr>
+  <tr>
+    <td>chmod -x file</td>
+    <td>Remove execute permission from the specified file</td>
+  </tr>
+  <tr>
+    <td>chmod u+r file</td>
+    <td>Add read permission for the owner of the file</td>
+  </tr>
+  <tr>
+    <td>chmod u+w file</td>
+    <td>Add write permission for the owner of the file</td>
+  </tr>
+  <tr>
+    <td>chmod u+x file</td>
+    <td>Add execute permission for the owner of the file</td>
+  </tr>
+  <tr>
+    <td>chmod g+r file</td>
+    <td>Add read permission for the group owner of the file</td>
+  </tr>
+  <tr>
+    <td>chmod g+w file</td>
+    <td>Add write permission for the group owner of the file</td>
+  </tr>
+  <tr>
+    <td>chmod g+x file</td>
+    <td>Add execute permission for the group owner of the file</td>
+  </tr>
+  <tr>
+    <td>chmod o+r file</td>
+    <td>Add read permission for others</td>
+  </tr>
+  <tr>
+    <td>chmod o+w file</td>
+    <td>Add write permission for others</td>
+  </tr>
+  <tr>
+    <td>chmod o+x file</td>
+    <td>Add execute permission for others</td>
+  </tr>
+  <tr>
+    <td>chmod 755 file</td>
+    <td>Set read, write, and execute permissions for the owner, and read and execute permissions for the group and others</td>
+  </tr>
+</table>
+<h1>chown Command</h1>
+
+<table>
+  <tr>
+    <th>Command</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>chown user file</td>
+    <td>Change the owner of the specified file to the specified user</td>
+  </tr>
+  <tr>
+    <td>chown user:group file</td>
+    <td>Change the owner and group owner of the specified file to the specified user and group</td>
+  </tr>
+  <tr>
+    <td>chown :group file</td>
+    <td>Change the group owner of the specified file to the specified group</td>
+  </tr>
+  <tr>
+    <td>chown -R user directory</td>
+    <td>Change the owner of the specified directory and its contents recursively to the specified user</td>
+  </tr>
+  <tr>
+    <td>chown -R user:group directory</td>
+    <td>Change the owner and group owner of the specified directory and its contents recursively to the specified user and group</td>
+  </tr>
+</table>
+<h1>ssh Command</h1>
+
+<table>
+  <tr>
+    <th>Command</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>ssh user@host</td>
+    <td>Connect to the specified host as the specified user using SSH</td>
+  </tr>
+  <tr>
+    <td>ssh -p port user@host</td>
+    <td>Connect to the specified host on the specified port as the specified user using SSH</td>
+  </tr>
+  <tr>
+    <td>ssh -i private_key user@host</td>
+    <td>Connect to the specified host as the specified user using SSH and the specified private key for authentication</td>
+  </tr>
+  <tr>
+    <td>ssh -X user@host</td>
+    <td>Connect to the specified host as the specified user using SSH with X11 forwarding enabled</td>
+  </tr>
+  <tr>
+    <td>ssh -L local_port:remote_host:remote_port user@host</td>
+    <td>Connect to the specified host as the specified user using SSH and create a local port forwarding from local_port to remote_host:remote_port</td>
+  </tr>
+  <tr>
+    <td>ssh -R remote_port:local_host:local_port user@host</td>
+    <td>Connect to the specified host as the specified user using SSH and create a remote port forwarding from remote_port to local_host:local_port</td>
+  </tr>
+</table>
+<h1>sudo Command</h1>
+
+<table>
+  <tr>
+    <th>Command</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>sudo command</td>
+    <td>Execute the specified command with superuser (root) privileges</td>
+  </tr>
+  <tr>
+    <td>sudo -u user command</td>
+    <td>Execute the specified command as the specified user</td>
+  </tr>
+  <tr>
+    <td>sudo -i</td>
+    <td>Start an interactive shell with superuser (root) privileges</td>
+  </tr>
+  <tr>
+    <td>sudo -s</td>
+    <td>Start a shell with superuser (root) privileges</td>
+  </tr>
+  <tr>
+    <td>sudo -l</td>
+    <td>List the privileges of the current user or the specified user</td>
+  </tr>
+  <tr>
+    <td>sudo -v</td>
+    <td>Update the user's timestamp, asking for the user's password if necessary</td>
+  </tr>
+</table>
+
+
+
+
 
 
 
