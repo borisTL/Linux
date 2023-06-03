@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Vim - README</title>
+  <h1>Vim </h1>
 </head>
 <body>
-  <h1>Vim - README</h1>
+ 
 
   <h2>Introduction</h2>
   <p>Vim is a highly configurable, powerful, and efficient text editor, often considered a successor to the classic Unix editor Vi. It is designed to be used from a command-line interface and offers a wide range of features for editing text files, programming, and more.</p>
